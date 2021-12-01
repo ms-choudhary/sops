@@ -1,0 +1,11 @@
+name: "sops"
+version: "0.1.0"
+usage: "Used for decrypting secret value files"
+description: "Used for decrypting secret value files"
+useTunnel: false
+command: "$HELM_PLUGIN_DIR/main.sh"
+
+downloaders:
+  - command: "downloader.sh"
+    protocols:
+      - "secrets"
